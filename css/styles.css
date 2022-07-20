@@ -1192,8 +1192,7 @@ li.socials-item {
 
 }
 .form-field{
-    /* outline: 1px solid rgba(33, 33, 33, 0.2); */
-     /* position: relative; */
+     position: relative; 
     height: 40px; 
     border-radius: 4px;
     margin-bottom: 28px;
@@ -1201,20 +1200,22 @@ li.socials-item {
     flex-direction: column;
 
 }
+
 .form-field.textarea{
     width: 100%;
     min-height: 120px;
     margin-bottom: 20px
 }
-/* .form-field textarea::placeholder {
+ .form-field textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.01em;
-}  */
+}  
 
 .form-field.checkbox{
+    position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1223,21 +1224,25 @@ li.socials-item {
 
 }
 .checkbox-icon{
-    width: 16px;
-    height: 15px;
+    position: absolute;
+     top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: transform var(--timing-function);
+    transition: fill 250ms var(--timing-function);
     margin-right: 7px;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
 }
 
-/* .checkbox:checked +.checkbox-icon {
+.checkbox:checked +.checkbox-icon {
     border-color: transparent;
     background-image: url(../images/icons/sprite3.svg#icon-iconcheck);
     background-color: var(--acсent-color);
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
-} */
+} 
 .form-field input{
     margin: 0;
     padding: 0; 
@@ -1254,11 +1259,11 @@ li.socials-item {
 
 .form-icon{
  position: absolute;
- top: 50%;
- left: 12px;
- transform: translateY(-50%);
- /* display: inline-block; */
- transition: fill 250ms var(--timing-function);}
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
+transition: transform var(--timing-function);
+transition: fill 250ms var(--timing-function);}
 
  .form-field:focus-within >.form-icon{
      fill: var(--acсent-color);
@@ -1274,11 +1279,6 @@ li.socials-item {
 
 .form-field label{
      margin-bottom: 4px; 
-     /* position: absolute;
-     top: 50%;
-     left: 15px;
-     transform: translateY(-50%);
-     transition: transform var(--timing-function); */
 }
  /* input[type=checkbox]{
     width: 16px;
