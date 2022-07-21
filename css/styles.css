@@ -1208,7 +1208,7 @@ li.socials-item {
     margin-bottom: 0;
 
 }
- .form-field textarea::placeholder {
+ .form-field.textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-weight: 400;
     font-size: 14px;
