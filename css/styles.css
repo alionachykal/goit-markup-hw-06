@@ -1264,9 +1264,6 @@ li.socials-item {
     margin-bottom: 4px;
 }
 
- .form-field-input:focus-within > .form-icon{
-    fill: var(--accent-color);}
-
 
 .form-icon{
 position: absolute;
