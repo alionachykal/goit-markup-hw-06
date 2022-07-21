@@ -1268,11 +1268,6 @@ li.socials-item {
     fill: var(--accent-color);}
 
 
- .form-input:focus-within,
-.form-textarea:focus-within {
-    border: 1px solid var(--acсent-color);
-}  
-
 .form-icon{
 position: absolute;
 top: 50%;
@@ -1285,10 +1280,6 @@ transition: fill 250ms var(--timing-function);}
     fill: var(--primary-bcg-accent-color);
 
 }
-
- .form-field:focus-within > .form-icon{
-     fill: var(--acсent-color);
- }  
 
 
 
